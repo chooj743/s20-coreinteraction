@@ -1,0 +1,140 @@
+body {
+  font-size: 35px;
+}
+
+h1{
+	font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    position: fixed;
+    left: 608px;
+    width: 700px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+p{
+	font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    position: fixed;
+    left: 608px;
+    top:140px;
+    width: 700px;
+}
+
+ul {
+  font-family: 'Poppins', sans-serif;
+  font-weight: medium;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+  list-style-type:none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+  color:  rgb(255,255,255,0.8); 
+}
+.content{
+  
+  float: center;
+/*    left: 10px;*/
+  display: block;
+  left:250px;
+  width: 700px;
+  padding-top: 65px;
+  padding-left: 300px;
+  color: white;
+
+}
+
+.active {
+  background-color: transparent;
+}
+
+
+.dropbtn {
+	float: right;
+  background-color: transparent;
+  padding: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: medium;
+  font-size: 35px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  float: right;
+  text-align: right;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  float: right;
+  text-align: right;
+  position: absolute;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  float: right;
+  text-align: right;
+  position: relative;
+  top:65px;
+  right: 68px;
+  padding-top: 8px;
+  padding-right: 16px;
+  width: 200px;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.dropdown-content a:hover {
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: transparent;
+  text-decoration: none;
+  color:  rgb(255,255,255,0.8); 
+}
+
+.button2 {
+    display: block;
+/*    padding: 200px;*/
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
