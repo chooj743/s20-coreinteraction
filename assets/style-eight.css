@@ -1,13 +1,32 @@
 *{
     margin: 0 auto;
     font-family: 'Source Sans Pro', sans-serif;
+    text-transform: none;
 }
 
 h1 {
-  filter:blur(4px);
   font-size: 3vw;
+}
+
+#blur{
+	filter:blur(0.3vw);
 }
 
 div{
 	padding: 3vh;
+}
+
+ a {
+    text-decoration: none;
+    color: black;
+
+}
+ a:hover {
+     color: black;
+     text-decoration: underline;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
 }
