@@ -25,7 +25,8 @@ div{
 }
  a:hover {
      color: black;
-     text-decoration: underline;
+   /*  text-decoration: underline;
+*/     filter:blur(0.3vw);
 }
 
 a:visited{
