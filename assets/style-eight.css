@@ -1,0 +1,13 @@
+*{
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  filter:blur(4px);
+  font-size: 3vw;
+}
+
+div{
+	padding: 3vh;
+}

@@ -22,6 +22,23 @@ h1{
   font-weight: inherit;
 }
 
+ a {
+    text-decoration: none;
+    color: white;
+
+}
+ a:hover {
+     color: #5C574A;
+     text-decoration: underline;
+}
+
+a:clicked{
+    text-decoration: none;
+    color: white;
+}
+
+
+
 /* tasks */
 .tasks{
   width: 30vw;
