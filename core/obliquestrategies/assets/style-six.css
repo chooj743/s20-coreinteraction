@@ -22,6 +22,18 @@ h1{
   font-weight: inherit;
 }
 
+a {
+     text-decoration: none;
+/*     text-decoration-skip: ink;
+     -webkit-text-decoration-skip: ink;*/
+     color: white;
+
+}
+ a:hover {
+     color: #5C574A;
+     text-decoration: underline;
+}
+
 /* tasks */
 .tasks{
   width: 30vw;
@@ -34,6 +46,7 @@ h1{
   right: 0px;
   margin: 0px auto;
 }
+
 input[type=checkbox] {
   display: none;
 }
