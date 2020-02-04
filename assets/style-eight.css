@@ -21,16 +21,18 @@ div{
  a {
     text-decoration: none;
     color: black;
-    filter:blur(0.3vw);
+/*    filter:blur(0.3vw);*/
+
 
 }
  a:hover {
-     color: black;
-     text-decoration: underline;
+    color: black;
+    text-decoration: none;
+    filter:blur(0.3vw);
+
 }
 
 a:visited{
     text-decoration: none;
     color: black;
-    filter:blur(0.3vw);
 }

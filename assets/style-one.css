@@ -1,0 +1,39 @@
+*{
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: none;
+}
+
+p{
+  padding: 16vw;
+  font-size: 5vw;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.12vw;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+p:hover {
+  animation: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: line-through;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
