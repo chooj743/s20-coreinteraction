@@ -1,0 +1,46 @@
+html{
+    margin: 0 auto;
+    background-color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+	/*text-transform: none;*/
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 8vw;
+    color: #404040;
+    letter-spacing: 0.5vw;
+    word-spacing: 1.5vw;
+	padding-left:45vw;
+	padding-top:5vw;
+	padding-bottom: 5vw;
+	margin:0;
+	justify-content: center;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+    text-decoration: wavy underline overline;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.vertical-text {
+ writing-mode: vertical-rl;
+}
+
+.vertical-text span {
+  text-orientation: upright;
+}

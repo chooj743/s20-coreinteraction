@@ -1,0 +1,25 @@
+html{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+div{
+	justify-content: center;
+/*	position: absolute;
+	display: block;*/
+}
+
+h1{
+	padding: 15vw;
+	text-align: center;
+	font-size: 1.6vw;
+}
+
+select{
+	font-size: 1.6vw;
+	text-transform: lowercase;
+}
+
+.disabled { 
+    pointer-events: none; 
+    }
