@@ -1,31 +1,93 @@
-*{
-    margin: 0 auto;
-    font-family: 'Source Sans Pro', sans-serif;
-/*    text-transform: none;*/
+html{
+  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: none;
+  background-color: #F3E2DA;
 }
 
-body {
-  height: 100vh; 
-  padding: 0.5em 1em;
-  background: #b9e2f7;
+body { 
+  margin: 0;
 }
-svg {
+
+div{
   display: block; 
+  margin: 0;
+  padding: 20px;
+  padding-top: 2vw;
+}
+
+table {
   width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1);
+  border-spacing: 0; background-color: #B5A99C;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-
+th, td {
+  border: 1px solid #E7D7C8;
+  box-sizing: border-box;
 }
 
-a:hover {
-     color: blue;
-     text-decoration: underline;
+th {
+  text-transform: uppercase;
+  font-size:10px;
+  font-weight:700;
+  padding: 10px 0;
+  color: white;
+  background-color: #A38D77;
+  letter-spacing: 1px;
 }
 
-a:visited{
-    text-decoration: none;
-    color: white;
+td {
+  width: 14.285%;
+  transition: all 0.3s;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 1.5% 1.5% 5%;
+  vertical-align: initial;
+  padding: 1.5% 0 ;
+  height: 75px;
+}
+
+.day:hover {
+  background-color: rgba(0,0,0,0.1);
+  cursor:pointer;
+}
+
+.today {
+  color: #FFF;
+  background-color: rgba(0,0,0,.25) !important;
+}
+
+span.number {
+  margin-left: 10%
+}
+
+span.event { 
+  height: 4px; 
+  background-color: rgba(0,0,0,.3); 
+  display: block; 
+  margin: 5px 10%; 
+  border-radius: 2px; 
+  background-color: #91c33b;
+}
+
+span.event-multiday {
+  margin: 5px -2px;
+  border-radius: 0;
+}
+
+span.event-multiday-start {
+  margin-right: -4px;
+}
+
+span.event-multiday-finish {
+  margin-left: -4px; 
+}
+
+span.event-ghost {
+  background-color:transparent;
 }
