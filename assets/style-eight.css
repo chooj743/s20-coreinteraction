@@ -1,38 +1,45 @@
-*{
+html{
     margin: 0 auto;
     font-family: 'Source Sans Pro', sans-serif;
-    text-transform: none;
+    height: auto;
+    background: radial-gradient(#6f7ee6, #34292b);
+/*    text-transform: none;*/
 }
 
-h1 {
-  font-size: 3vw;
-  line-height: 4vw;
+body {
+  height: 100vh; 
+  font-size: 4vw;
+  line-height: 10vw;
+  width: 20vw;
+  float: right;
+  text-align: right;
+  padding: 0.5em 1em;
+  color: white;
 }
 
-#blur{
-	filter:blur(0.3vw);
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: white; }
+    49%{    color: white; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: white; }
 }
 
-div{
-	padding: 3vh;
-	max-width: 95%;
-}
-
- a {
-    text-decoration: none;
-    color: black;
-/*    filter:blur(0.3vw);*/
-
+a {
+  text-decoration: none;
+  color: inherit;
 
 }
- a:hover {
-    color: black;
-    text-decoration: none;
-    filter:blur(0.3vw);
 
+a:hover {
+  color: #34292b;
+  text-decoration: underline;
 }
 
 a:visited{
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: inherit;
 }

@@ -1,66 +1,96 @@
-/* tiny reset */
-html {
+html{
   margin: 0;
   padding: 0;
-  border: 0;
+/*  background-color: none;*/
   font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
+  align-content: center;
+
+  height: 100%;
+  background-image: linear-gradient(to right, #074b71, #96e0e9);
+  background-color: #074b71;
+
 }
 
-body {
+h1 {
+  position:relative;
+  display:inline-block
+  font-weight: bold;
+  color:white;
+  text-align: center;
+  font-size: 2vw;
+  padding-top:5vh;
+  text-decoration: 1px solid underline black;
+}
+
+div{
+  display: inline-block;
+  font-weight: bold;
+  position: relative;
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 10vw;
+/*  float: left;*/
+/*  align-content: center;*/
+  width:100%;
+  height: 100%;
+}
+
+body{
+  text-align: center;
+  padding: 5vw;
+
+}
+
+#jumble{
+/*  display: inline-grid;*/
+  color: white;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  /*animation: none;*/
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+
+  letter-spacing: 20vw;
+  line-height: 10vw;
+/*  letter-spacing: 20vw;
+  line-height: 10vw;*/
 }
 
 p{
-/*  padding-top:20px;*/
-  align-items: center;
+  font-size: 5vw;
   text-align: center;
+  font-weight: bold;
+/*  letter-spacing: 0.12vw;*/
 }
 
-svg {
-  display: block; 
-  width: 100%;
-}
-
-.slide {
-  width: 100vw;
-  height: 100vh;
-}
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 4000vw;
-}
-.one {
-  background: linear-gradient(to right, #ff0000, #ffff00);
-}
-.two {
-  background: linear-gradient(to right, #ffff00, #0000ff);
-}
-.three {
-  background: linear-gradient(to right, #0000ff, #ff00ff);
-}
-.four {
-  background: linear-gradient(to right, #ff00ff, #ff0000);
-}
+/*
+p:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}*/
 
 
+/*span{
+  display: inline-block;
+  font-weight: bold;
+  padding-bottom: 5vw;
+  padding-left: 2vw;
+  float: left;
+  text-align: center;
+}*/
 
-
- a {
-    text-decoration: none;
-    color: white;
-
+a {
+  text-decoration: none;
+  color: white;
 }
- a:hover {
-     color: #5C574A;
-     text-decoration: underline;
+
+a:hover {
+  color: white;
+  text-decoration: wavy overline;
 }
 
 a:visited{
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
-

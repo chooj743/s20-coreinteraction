@@ -1,112 +1,77 @@
 /* tiny reset */
-html, body {
+html {
   margin: 0;
   padding: 0;
   border: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  font-size: 100%;
-}
-/* body */
-body{
-  background: #918879;
-  font-family: 'Source Sans Pro', sans-serif;
-    padding-bottom: 200px;
-/*  border-top: 5px solid #aa8e8d;*/
-}
-/* title */
-h1{
-  color: white;
-  text-align: center;
-  font-size: 2vw;
-  font-weight: inherit;
 }
 
- a {
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p{
+  position: relative;
+  align-items: center;
+  top:50%;
+
+  font-size: 0.8vw;
+  color: white;
+  text-align: center;
+  text-transform: lowercase;
+  word-spacing: 110px;
+}
+
+svg {
+  display: block; 
+  width: 100%;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 1800vw;
+}
+.one {
+  background: linear-gradient(to right, #ff0000, #ff7800);
+}
+.two {
+  background: linear-gradient(to right, #ff7800, #ffff00);
+}
+.three {
+  background: linear-gradient(to right, #ffff00, #3bc41d);
+}
+.four {
+  background: linear-gradient(to right, #3bc41d, #0000ff);
+}
+.five {
+  background: linear-gradient(to right, #0000ff, #492503);
+}
+.six {
+  background: linear-gradient(to right, #492503, #ff0000);
+}
+
+
+
+a {
     text-decoration: none;
     color: white;
 
 }
- a:hover {
-     color: #5C574A;
-     text-decoration: underline;
+a:hover {
+     color: #0000ff;
+     text-decoration: underline dotted;
 }
 
 a:visited{
     text-decoration: none;
     color: white;
 }
-
-/* tasks */
-.tasks{
-  width: 30vw;
-/*  padding-bottom: 120px;*/
-/*  width:300px;*/
-  height: 900px;
-  position: absolute;
-  top: 20px;
-  left: 0px; 
-  right: 0px;
-  margin: 0px auto;
-}
-input[type=checkbox] {
-  display: none;
-}
-label{
-  background: #B2A990;
-  height: 50px;
-  width: 100%;
-  display: block;
-  border-bottom: 1px solid #2C3E50;
-  color: #fff;
-  text-transform: capitalize;
-  font-weight: inherit;
-  font-size: 11px;
-  letter-spacing: 1px;
-  text-indent: 20px;
-  cursor: pointer;
-  transition: all 0.7s ease;
-  position: relative;
-  padding: 5px;
-  box-sizing: 100%;
-}
-
-label h2 span{
-  display: block;
-  font-size: 12px;
-  text-transform: capitalize;
-  font-weight: normal;
-  color: white;
-}
-
-label:before{
-  content:"";
-  width: 20px;
-  height: 20px;
-  background: #827B69; /*empty buttons*/
-  display: block;
-  position: absolute;
-  border-radius: 100%;
-  right: 20px;
-  top: 30%;
-  transition: border 0.7s ease
-}
-
-#label-30:checked ~ label[for=label-30]
-{
-  background: #5C574A;
-  border-bottom: 1px solid white;
-  color: #C6B9A4;
-}
-
-#label-30:checked ~ label[for=label-30] h2 span
-{
-  color: #E3E1DA;
-}
-
-#label-30:checked ~ label[for=label-30]:before
-{
-    background: url("../content/eoPQ05r.png") no-repeat center center;
-}
-
 

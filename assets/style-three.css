@@ -1,113 +1,78 @@
-html{
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #F2EFCA;
-}
-
-h1{
-  margin:0;
-  font-weight: bold;
-  text-align: center;
-  font-size: 3vw;
-  color: #8C602A;
-  padding-top:2vw;
-}
-
-a {
-  text-decoration: none;
-  color: #8C602A;
-
-}
-a:hover {
-  text-decoration: line-through;
-}
-
-a:visited{
-  text-decoration: none;
-  color: #8C602A;
-}
-
-div{
-  background-color: pink;
-  float: center;
-/*  display: block;*/
-/*  align-content: center;*/
+/* tiny reset */
+html, body {
   margin: 0;
-/*  position: relative;*/
-/*  justify-content: center;*/
-  padding-bottom: 5vh;
-/*  vertical-align: middle;*/
+  padding: 0;
+  border: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+p{
+/*  padding-top:20px;*/
+/*  margin-top: 18%;*/
+  margin-left:5%;
+  position: flex;
+  font-style: oblique;
+  font-size: 1vw;
+  color: white;
+
+/*  word-spacing: 110px;*/
+}
+
+svg {
+  display: block; 
   width: 100%;
 }
 
-
-/*.labels-style{
-  background-color: blue;
-  position: absolute;
-  width: 50%;
-
-}*/
-
-/*.container {
-  background-color: pink;
-  display: table-cell;
-  vertical-align: middle;
-  position: absolute;
-  padding:200px;
-
-}*/
-
-
-.alert {
-  position: relative;
-/*  display:inline-block;
-  margin: 5vw;*/
-  top: 10;
-  left: 0;
-  width: 80vw;
-  height: auto;
-  padding: 10px;
-  margin: 2vh;
-  line-height: 3vw;
-  border-radius: 0.6vw;
-  cursor: pointer;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 3vw;
+.slide {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
 }
-
-.alertCheckbox {
-  display: none;
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: #969598;
+  width: 1300vw;
+/*    border-right: 1px solid black;*/
 }
-
-:checked + .alert {
-  display: none;
-}
-
-.alertText {
-  display: table;
-  margin: 0 auto;
+.one {
+  line-height: 60px;
+  word-spacing: 100px;
   text-align: center;
-  font-size: 16px;
+
+}
+.two {
+  margin-top: 350px;
+  line-height: 60px;
+  word-spacing: 100px;
+  text-align: center;
+  
+}
+.three {
+  line-height: 60px;
+  word-spacing: 100px;
+  font-size: 20px;
+  color: red;
+  text-align: center;
 }
 
-.alertClose {
-  float: right;
-  padding-top: .15vw;
-  font-size: 1vw;
+
+ a {
+    text-decoration: none;
+    color: white;
+
+}
+ a:hover {
+     color: white;
+     text-decoration: underline;
 }
 
-.clear {
-  clear: both;
+a:visited{
+    text-decoration: none;
+    color: white;
 }
 
-.boxA {
-  background-color: #F2DE79;
-  border: 1px solid #8C602A;
-  color: #8C602A;
-}
-
-.boxB {
-  background-color: #e8b461;
-  border: 1px solid #8C602A;
-  color: #8C602A;
-}
