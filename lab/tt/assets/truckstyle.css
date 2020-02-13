@@ -1,0 +1,238 @@
+@font-face {
+  font-family:"BrushBQ";
+  src:url("fonts/Brush BQ Regular.woff2") format("woff2"),url("Brush BQ Regular.woff") format("woff"),url("Brush BQ Regular.otf") format("opentype");
+  font-style:normal;
+  font-weight:400;
+}
+
+html, body{
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+overflow-y: hidden;
+}
+
+.wrapper {
+margin: 0;
+padding: 0;
+height: auto;
+display: flex;
+flex-flow: nowrap;
+overflow: hidden;
+/*	align-content: center;*/
+min-height: 100%;
+}
+
+.wrapper > * {
+padding: 10px;
+}
+
+.header {
+/*	background: pink;*/
+margin: 0;
+padding:15px;
+padding-top: 3vh;
+width: 100%;
+
+font-family: Helvetica, sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+font-style: italic; 
+word-spacing: 2vw;
+font-size: 4vw;
+text-align: center;
+color: #CA0000;
+}
+
+.aside-1 {
+/*  background: gold;*/
+display: block;
+overflow: hidden;
+width: 40%;
+height: 89vh;
+}
+
+.aside-2 {
+/*  background: hotpink;*/
+display: block;
+overflow: hidden;
+width: 20%;
+height: 89vh;
+}
+
+.aside-3 {
+/*  background: grey;*/
+display: block;
+overflow: hidden;
+width: 40%;
+height: 89vh;
+}
+
+
+#rowa1{
+display: block;
+position: absolute;
+margin-top: 40px;
+margin-left: 120px;
+font-family:"BrushBQ";
+font-style:normal;
+font-weight:400;
+font-size: 2vw;
+letter-spacing: 0.3vw;
+
+-webkit-transform: rotate(-10deg);
+}
+
+#rowb1{
+display: block;
+position: absolute;
+/*	margin-top: 60px;*/
+font-family: Helvetica, sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+font-style: italic;
+margin-top: 130px;
+margin-left:  20px;
+word-spacing: 2vw;
+font-size: 7.5vw;
+text-align: right;
+}
+
+#rowc1{
+display: block;
+position: absolute;
+/*	margin-top: 60px;*/
+font-family: Helvetica, sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+margin-top: 235px;
+margin-left:  180px;
+font-size: 1.2vw;
+text-align: center;
+}
+
+#rowd1{
+display: block;
+position: absolute;
+/*	margin-top: 60px;*/
+font-family: Helvetica, sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+color: #CA0000;
+margin-top: 310px;
+margin-left:  20px;
+font-size: 6vw;
+text-align: left;
+}
+
+#rowe1{
+display: block;
+position: absolute;
+/*	margin-top: 60px;*/
+font-family: Helvetica, sans-serif;
+font-weight: bold;
+margin-top: 510px;
+margin-left:  20px;
+font-size: 2vw;
+text-align: left;
+}
+
+#rowf1{
+display: block;
+position: absolute;
+color: brown;
+/*	margin-top: 60px;*/
+font-family: Helvetica, sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+margin-top: 545px;
+margin-left:  20px;
+font-size: 1.2vw;
+text-align: left;
+border-bottom: 3px solid brown;
+}
+
+img{
+display: block;
+position: absolute;
+margin-top: 40px;
+align-content: center;
+width: 20%;
+}
+
+
+#rowa3{
+display: block;
+position: absolute;
+margin-top: 40px;
+margin-right: 40px;
+font-family:"BrushBQ";
+font-style: normal;
+font-weight:400;
+font-size: 3vw;
+letter-spacing: 0.3vw;
+text-align: right;
+}
+
+
+#rowb3{
+display: block;
+position: absolute;
+font-family: Helvetica, sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+font-style: italic;
+margin-top: 130px;
+margin-right: 40px;
+word-spacing: 2vw;
+font-size: 7.2vw;
+text-align: right;
+}
+
+#rowc3{
+display: block;
+position: absolute;
+/*	margin-top: 60px;*/
+font-family: Helvetica, sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+font-style: italic;
+margin-top: 235px;
+/*	margin-right: 0px;*/
+font-size: 2vw;
+text-align: right;
+align-content: right;
+padding-left: 150px;
+}
+
+
+
+#rowd3{
+display: block;
+position: absolute;
+/*	margin-top: 60px;*/
+font-family: Helvetica, sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+color: #CA0000;
+margin-top: 310px;
+/*	margin-left:  20px;*/
+font-size: 6vw;
+text-align: right;
+}
+
+
+
+#rowe3{
+display: block;
+position: absolute;
+/*	margin-top: 60px;*/
+font-family: Helvetica, sans-serif;
+text-transform: lowercase;
+font-weight: bold;
+margin-top: 510px;
+/*	margin-left:  20px;*/
+font-size: 2vw;
+text-align: right;
+}

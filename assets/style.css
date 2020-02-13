@@ -1,115 +1,23 @@
-.container { 
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1em;
-    text-align: center; 
-
-      box-sizing: inherit;
-    
-    @media (min-width: 600px) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-.btn {
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  border: 1px solid white;
+html, body{
+  padding:0;
+  margin: 0;
   font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  font-size:16px;
-  font-weight: 400;
-  line-height: 45px;
-  margin: 0 0 2em;
-  max-width: 160px; 
-  position: absolute;
-  top: 275px;
-  left:608px;
-  width: 100%; 
-  
-  @ media(min-width: 400px) {
-     display: inline-block;     
-     margin-right: 2.5em;
-      &:nth-of-type(even) {
-      margin-right: 0;
-     }
-   }
-  
-  @media(min-width: 600px) {
-      
-    margin: 0 1em 2em;
-       &:nth-of-type(even) {
-       margin-right: 2.5em;
-        }
-    
-     &:nth-of-type(5) {
-       margin-right: 0;
-        }
-    
-  }
-  }
-  
-  &:hover { text-decoration: none; }
+
+  width: 100vw;
+  height: 100vh;
 }
 
-
-
-/*/////////////////////////////
-//button-5 
-///////////////////////////*/
-.btn-5 {
-  border: 0 solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-  outline: 1px solid;
-  outline-color: rgba(255, 255, 255, .5);
-  outline-offset: 0px;
-  text-shadow: none;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-} 
-
-.btn-5:hover {
-  border: 1px solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-  outline-color: rgba(255, 255, 255, 0);
-  outline-offset: 15px;
-  text-shadow: 1px 1px 2px #427388; 
-}
-
-
-
-
-
-
-body {
+#menu{
+  position: fixed;
+  background-color: transparent;
+  z-index: 100;
+  width: 100vw;
+  height:10vh;
+/*  background-color: transparent;*/
   font-size: 35px;
 }
 
-h1{
-	font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-    position: fixed;
-    left: 608px;
-    width: 700px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid white;
-}
-
-p{
-	font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    letter-spacing: 0.5px;
-    position: fixed;
-    left: 608px;
-    top:140px;
-    width: 700px;
-}
-
 ul {
-  font-family: 'Poppins', sans-serif;
   font-weight: medium;
   margin: 0;
   padding: 0;
@@ -120,6 +28,7 @@ ul {
 
 li {
   float: left;
+  color: white;
   list-style-type:none;
 }
 
@@ -131,33 +40,38 @@ li a {
   text-decoration: none;
 }
 
+li a:active {
+  color: white;
+  text-decoration: wavy;
+}
+
 li a:hover {
   text-decoration: underline;
   color:  rgb(255,255,255,0.8); 
 }
-.content{
-  
-  float: center;
-/*    left: 10px;*/
-  display: block;
-  left:250px;
-  width: 700px;
-  padding-top: 65px;
-  padding-left: 300px;
-  color: white;
 
+
+a {
+  color: white;
+  text-decoration: wavy underline;
 }
 
-.active {
-  background-color: transparent;
+a:active {
+  color: white;
+  text-decoration: wavy;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:  rgb(255,255,255,0.8); 
 }
 
 
 .dropbtn {
 	float: right;
   background-color: transparent;
-  padding: 16px;
-  font-family: 'Poppins', sans-serif;
+  height: 10vh;
+  padding: 14px 16px;
   font-weight: medium;
   font-size: 35px;
   color: white;
@@ -174,15 +88,14 @@ li a:hover {
 }
 
 .dropdown-content {
+  margin-right: 0;
   display: none;
   float: right;
-  text-align: right;
   position: absolute;
-  background-color: transparent;
-  font-family: 'Poppins', sans-serif;
+  background-color: none;
   text-decoration: none;
-  min-width: 160px;
   z-index: 1;
+  width: 15vh;
 }
 
 .dropdown-content a {
@@ -191,10 +104,9 @@ li a:hover {
   text-align: right;
   position: relative;
   top:65px;
-  right: 68px;
-  padding-top: 8px;
-  padding-right: 16px;
+  padding-top: 0px;
   width: 200px;
+  font-size: 34px;
   color: white;
   text-decoration: none;
   background-color: transparent;
@@ -216,11 +128,104 @@ li a:hover {
   color:  rgb(255,255,255,0.8); 
 }
 
-.button2 {
+/*.button2 {
     display: block;
-/*    padding: 200px;*/
+    background-color: blue;
     height: 100%;
     justify-content: center;
     text-align: center;
     width: 100%;
+}*/
+
+
+.container { 
+  margin: 0;
+  position: absolute;
+  height: 100%;
+  width:100%;
+  padding-top: 20px;
+  align-items: left;
+  display: flex;
+}
+
+.btn {
+  margin: 0;
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid white;
+
+  color: white;
+  text-decoration: none;
+  font-size:1vw;
+  text-align: center;
+
+  max-width: 160px; 
+  width: 100%; 
+  
+  &:hover { text-decoration: none; }
+}
+
+/*/////////////////////////////
+//button-5 
+///////////////////////////*/
+.btn-5 {
+  position: absolute;
+  padding: 10px;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+
+.box{
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: auto;
+  height: 100vh;
+}
+
+#box-1{
+  background-color: transparent;
+  width: 30vw;
+}
+
+#box-2{
+  background-color: transparent;
+  width:50vw;
+  height: 100vh;
+}
+
+#box-3{
+  background-color: transparent;
+  width: 20vw;
+}
+
+span{
+  margin-top:10vh;
+  display: block;
+  color: white;
+  position: absolute;
+  background-color: transparent;
+  font-size: 1.9vw;
+}
+
+h1{
+  font-size: 2vw;
+  color: white;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
 }
