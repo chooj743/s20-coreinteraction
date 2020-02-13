@@ -1,0 +1,118 @@
+*{
+	padding:0;
+	margin: 0;
+}
+
+html{
+	font-size:2vw;
+}
+
+#menu{
+	position: fixed;
+	z-index: 100;
+	top:0;
+	width: 100vw;
+	height:50vh;
+	background-color: pink;
+}
+
+.box{
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	vertical-align: middle;
+	width: 33.33%;
+/*	height: 50rem;*/
+	height: 100vh;
+}
+
+#box-1{
+	 background-color: red;
+}
+
+#box-2{
+	background-color: green;
+}
+
+/*#box-2 .absoulte{
+	background-color: white;
+}*/
+
+#box-3{
+	background-color: blue;
+}
+
+
+/*.absoulte{
+	position: absolute;
+	width: 5rem;
+	height:1rem;
+	top:50%;
+	left:1rem;
+	background-color: black;
+	transform: skew(-50deg) rotate(22deg);
+}*/
+
+
+
+
+/*.myDiv{
+	font-size: 2rem;
+	color: white;
+	background-color: blue;
+
+	width: 80vw;
+	height: 4.4rem;
+	margin: 0.5rem;
+
+	border: solid 2px black;
+	padding: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+#firstSquare{
+	margin-bottom: 60px;
+	box-sizing: border-box;
+}
+
+
+p{
+	width:80vw;
+	height: 10vh;
+	background-color: yellow;
+	color: black;
+}
+
+/*Units: px, %, vw, vh, re*/m (1rem = font size of html) */
+
+
+@media screen and (max-width: 768px) {
+
+  *{
+	padding:0;
+	margin: 0;
+	}
+
+	.example h1 {
+
+	}
+
+
+  .intro {
+
+	}
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+
+
+
