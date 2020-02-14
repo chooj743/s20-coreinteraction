@@ -1,19 +1,38 @@
-html{
+*{
 	padding:0;
 	margin: 0;
 }
 
-body{
+html{
 	font-size:2vw;
 }
 
-#menu{
-	position: fixed;
-	z-index: 100;
+.menu{
+	margin: 0;
+	background-color: #2E0927;
+	position: absolute;
+	display: inline-flex;
+	align-content: center;
+	align-items: center;
+
 	top:0;
 	width: 100vw;
-	height:50vh;
+	height:15vh;
+	z-index: 100;
+}
+
+#oval {
 	background-color: pink;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	vertical-align: middle;
+
+    width: 20%;
+    height: 90%;
+    border-radius: 50%;
 }
 
 .box{
@@ -22,12 +41,24 @@ body{
 	position: relative;
 	vertical-align: middle;
 	width: 33.33%;
-/*	height: 50rem;*/
-	height: 100vh;
+	height: 200vh;
 }
 
 #box-1{
-	 background-color: red;
+	background-color: #FF8C00;
+}
+
+#square {
+	background-color: #D90000;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top:15vh;
+	align-items: center;
+	vertical-align: middle;
+    width: 100%;
+    height: 33.33%;
 }
 
 #box-2{
@@ -42,77 +73,95 @@ body{
 	background-color: blue;
 }
 
+#triangle {
+	background-color: #BF9780;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top:150vh;
+	align-items: center;
+	vertical-align: middle;
 
-/*.absoulte{
-	position: absolute;
-	width: 5rem;
-	height:1rem;
-	top:50%;
-	left:1rem;
-	background-color: black;
-	transform: skew(-50deg) rotate(22deg);
-}*/
-
-
-
-
-/*.myDiv{
-	font-size: 2rem;
-	color: white;
-	background-color: blue;
-
-	width: 80vw;
-	height: 4.4rem;
-	margin: 0.5rem;
-
-	border: solid 2px black;
-	padding: 0.5rem;
-	padding-right: 0.5rem;
-}
-
-#firstSquare{
-	margin-bottom: 60px;
-	box-sizing: border-box;
-}
-
-
-p{
-	width:80vw;
-	height: 10vh;
-	background-color: yellow;
-	color: black;
-}
-
-/*Units: px, %, vw, vh, re*/m (1rem = font size of html) */
-
+    width: 0;
+    height: 0;
+    border-top: 50vh solid #592E1E;
+    border-left: 16.66vw solid transparent;
+    border-right: 16.66vw solid transparent;
+    }
 
 @media screen and (max-width: 768px) {
 
-  *{
-	padding:0;
-	margin: 0;
-	}
-
-	.example h1 {
-
+	.menu{
+	background-color: #035AA6;
 	}
 
 
-  .intro {
+	#oval {
+	background-color: #F2CB05;
+	}
 
+	#square {
+	background-color: #F26835;
+	top:150vh;
+	}
+
+	#triangle {
+	top:15vh;
+	background-color: green;
+    border-top: 25vh solid #1C3061;
+    border-right: 16.66vw solid #C9EA8C;
+    border-bottom: 25vh solid #D2DEEE;
+    }
+
+	#box-1{
+	background-color:#BF212E;
+	}
+
+	#box-2{
+	background-color: purple;
+	}
+
+	#box-3{
+	background-color: orange;
 	}
 }
 
 
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
+@media (max-width: 600px) {
+    .menu{
+	background-color: #0B0C0D;
+	}
+
+
+	#oval {
+	background-color: #D7D7D9;
+	}
+
+	#square {
+	background-color: #556A73;
+	top:15vh;
+	height:10vh;
+	}
+
+	#triangle {
+	top:50vh;
+	background-color: #731753;
+    border-top: 25vh solid transparent;
+    border-right: 16.66vw solid #731753;
+    border-bottom: 25vh solid #BFA4B8;
+    }
+
+	#box-1{
+	background-color:#D2DEEE;
+	}
+
+	#box-2{
+	background-color:#595040;
+	}
+
+	#box-3{
+	background-color: #731753;
+	}
 }
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
-}
-
-
 
