@@ -165,3 +165,39 @@ html{
 	}
 }
 
+@media (max-width: 375px) {
+	.menu{
+	background-color: #8C0B3B;
+	}
+
+
+	#oval {
+	background-color: #BF5239;
+	}
+
+	#square {
+	background-color: #142AA6;
+	top:15vh;
+	height:10vh;
+	}
+
+	#triangle {
+	top:50vh;
+	background-color: #4393A2;
+    border-top: 25vh solid transparent;
+    border-right: 16.66vw solid #D9D9D9;
+    border-bottom: 25vh solid #4393A2;
+    }
+
+	#box-1{
+	background-color:#799741;
+	}
+
+	#box-2{
+	background-color:#142AA6;
+	}
+
+	#box-3{
+	background-color: #4393A2;
+	}
+}
