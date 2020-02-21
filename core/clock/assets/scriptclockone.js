@@ -7,15 +7,16 @@ var t = setInterval(function () {
  var source = "../core/content/Tick.mp3"
  var audio = document.createElement("audio");
 
-function enableLoop() { 
+/*function enableLoop() { 
   audio.loop = true;
 } 
-
+*/
  //
  audio.autoplay = true;
  //
  audio.load()
  audio.addEventListener("load", function() { 
      audio.play(); 
+     audio.loop();
  }, true);
  audio.src = source;
