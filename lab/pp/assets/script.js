@@ -37,7 +37,7 @@ setInterval (function(){
 	
 	//roofHeight = roofHeight + 1;
 
-}, 10);
+}, 100);
 
 
 
@@ -62,5 +62,5 @@ setInterval (function(){
 	}
 	
 	//roofHeight = roofHeight + 1;
-	}, 10);
+	}, 100);
 
