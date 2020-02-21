@@ -5,9 +5,19 @@ var t = setInterval(function () {
 }, blink_speed);
 
  var source = "../core/content/Tick.mp3"
- var audio = document.createElement("audio").loop = true;
+ var audio = document.createElement("audio");
+
+
+ var audio = document.getElementById("audio");
+
+function enableLoop() { 
+audio.autoplay = true; 
+  audio.loop = true;
+  audio.load();
+} 
+
  //
- audio.autoplay = true;
+
  //
  audio.load()
  audio.addEventListener("load", function() { 
