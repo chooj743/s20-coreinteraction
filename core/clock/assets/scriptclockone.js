@@ -5,7 +5,7 @@ var t = setInterval(function () {
 }, blink_speed);
 
  var source = "../core/content/Tick.mp3"
- var audio = document.createElement("audio");
+ var audio = document.createElement("audio").loop = true;
  //
  audio.autoplay = true;
  //
