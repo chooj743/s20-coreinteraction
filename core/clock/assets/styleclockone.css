@@ -1,8 +1,8 @@
 html, body{
 	padding:0;
 	margin: 0;
-	font-family: Helvetica, sans-serif;
-	font-size: 2vw;
+	font-family: Helvetica Neue, sans-serif;
+	font-size: 1.8vw;
 	background-color: black;
 }
 
@@ -17,15 +17,77 @@ html, body{
 	padding: 1rem;
 }
 
-
 #tick{
 	position: relative;
 	display: flex;
 	justify-content: center;
 	background-color: transparent;
 	color: rgb(254, 203, 0);
-	font-weight: medium;
 	text-align: center;
 	width: 50vw;
 	height: 3rem;
 }
+
+
+@media (max-device-width: 667px){
+
+	html, body{
+	font-size: 2.5vw;
+	letter-spacing: 0.1vw;
+	background-color: #0c0c0c;
+	}
+ 
+ 	#time{
+	background-color: black;
+	top:9.5%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	height: 80%;
+	padding: 0;
+	}
+
+	#tick{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 85%;
+	background-color: transparent;
+	color: rgb(254, 203, 0);
+	text-align: center;
+	width: 100vw;
+	}
+}
+
+
+@media (max-device-width: 375px){
+
+	html, body{
+	font-size: 3.5vw;
+	letter-spacing: 0.1vw;
+	background-color: #0c0c0c;
+	}
+ 
+ 	#time{
+	background-color: black;
+	top:35%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	height: 30%;
+	padding: 0;
+	}
+
+	#tick{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 80%;
+	background-color: transparent;
+	color: rgb(254, 203, 0);
+	text-align: center;
+	width: 100vw;
+	}
+}
+
+
