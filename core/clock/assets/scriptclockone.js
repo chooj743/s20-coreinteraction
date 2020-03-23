@@ -179,6 +179,15 @@ function delayedTime(currentScene, currentAction){
 			currentScene = currentScene + 1;
 		}
 
+		if (currentScene > 6){
+			currentAction = currentAction + 1;
+			}else{
+				currentAction = 0;
+				currentScene = currentScene + 1;
+			}
+
+		}
+
 		//then, we run our function again with our updated information
 		delayedTime(currentScene, currentAction)
 
