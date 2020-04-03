@@ -46,6 +46,7 @@ html{
 
 #box-1{
 	background-color: #FF8C00;
+
 }
 
 #square {
@@ -96,7 +97,6 @@ html{
 	background-color: #035AA6;
 	}
 
-
 	#oval {
 	background-color: #F2CB05;
 	}
@@ -129,10 +129,10 @@ html{
 
 
 @media (max-width: 600px) {
+
     .menu{
 	background-color: #0B0C0D;
 	}
-
 
 	#oval {
 	background-color: #D7D7D9;
@@ -166,10 +166,10 @@ html{
 }
 
 @media (max-width: 375px) {
+
 	.menu{
 	background-color: #8C0B3B;
 	}
-
 
 	#oval {
 	background-color: #BF5239;

@@ -86,7 +86,7 @@ var timing = [
 		1000, 1000, 1000, 1000, 1000,
 		1000, 1000, 1000, 1000, 1000, 1000, 1000,
 		1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000],
-	[2000, 2500, 1000, 1000, 1000, 1000, 1000]
+	[10500, 2500, 1000, 1000, 1000, 1000, 1000]
 ];
 
 //SUBTITLE TEXTS
@@ -130,12 +130,12 @@ function subtitleContent(sceneIndex, actionIndex, subtitleELementA){
 		
 		// get total amount of time before next action
 		var countDown = timing[sceneIndex][actionIndex];
-		console.log("before " + countDown)
+
 		// after a delay of 9 seconds, start ticking
 		setTimeout(function(){
 			// immediatly subtract the delay from our countdown (we want to get to 0 to know when to stop)
 			countDown = countDown - 9000;
-			console.log("after " + countDown)
+			
 			var showTick = true // the showTick toggles between showing and hiding the ticker
 			// tick every second:
 			var ticking = setInterval(function(){
@@ -146,6 +146,7 @@ function subtitleContent(sceneIndex, actionIndex, subtitleELementA){
 					// if our countdown has reached 0, stop ticking
 					clearInterval(ticking)
 				}
+
 				// if showTick is true, show our ticker and swithc to false for next time
 				if(showTick){
 					subtitleELementA.innerHTML = "[" + "tick" + "]"
@@ -179,21 +180,11 @@ function delayedTime(currentScene, currentAction){
 			currentScene = currentScene + 1;
 		}
 
-		if (currentScene > 6){
-			currentAction = currentAction + 1;
-			}else{
-				currentAction = 0;
-				currentScene = currentScene + 1;
-			}
-
-		}
-
 		//then, we run our function again with our updated information
 		delayedTime(currentScene, currentAction)
 
 	}, timing[currentScene][currentAction])
 }
-
 
 
 
