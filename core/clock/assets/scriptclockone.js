@@ -30,7 +30,7 @@ if(ourHours === 8 && ourMinutes === 10){
 }
 
 //scene 3: STILL 11:30 till 14:00
-if(ourHours >= 11 && ourMinutes > 23){
+if(ourHours === 11 && ourMinutes > 23){
 	globalCurrentScene = 2;
 	globalCurrentAction = 0;
 }
@@ -60,10 +60,11 @@ if(ourHours === 20){
 }
 
 //scene 8: STILL 5:00 till 
-if(ourHours === 21){
+if(ourHours === 20){
 	globalCurrentScene = 7;
 	globalCurrentAction = 0;
 }
+
 
 
 
@@ -76,7 +77,7 @@ var timing = [
 
 		5000, 180000, 900000, 30000,
 		120000, 300000, 300000, 5000, 20000,
-		120000, 1140000, 5000, 230000, 300000, 5000],
+		1140000, 5000, 230000, 300000, 5000],
 	[1320000, 1320000, 1320000, 1320000, 1320000],
 	[3600000, 9000, 23000, 3780000, 28000],
 	[60000, 7140000, 1140000, 60000],
@@ -118,14 +119,12 @@ function subtitleContent(sceneIndex, actionIndex, subtitleELementA){
 	console.log("action: ", scenes[sceneIndex][actionIndex])
 	subtitleELementA.innerHTML = "[" + scenes[sceneIndex][actionIndex] + "]"
 
-	//EACH SUBTITLE TO APPEAR FOR 5s DURATION
 	if(timing[sceneIndex][actionIndex] > 5000){
 		setTimeout(function(){
 			subtitleELementA.innerHTML = ''
 		}, 5000)
 	}
 
-	//TICKING WHEN SILENCE FOR MORE > 10s
 	if(timing[sceneIndex][actionIndex] > 10000){
 		
 		// get total amount of time before next action
@@ -162,8 +161,6 @@ function subtitleContent(sceneIndex, actionIndex, subtitleELementA){
 }
 
 
-
-//ENABLES SCENES TO FIRE IN ORDER
 function delayedTime(currentScene, currentAction){
 	// update our subtitle
 	console.log("timing: ", timing[currentScene][currentAction])
@@ -188,11 +185,5 @@ function delayedTime(currentScene, currentAction){
 
 
 
+
 delayedTime(globalCurrentScene, globalCurrentAction)
-
-
-
-
-
-
-
