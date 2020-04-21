@@ -1,0 +1,143 @@
+html, body{
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+overflow: hidden;
+/*cursor: url('../contents/32px-03.svg'), auto;*/
+/*cursor: url('../contents/pinched.svg'), auto;*/
+}
+
+/*.cursor{
+	width: 20px;
+	height: 20px;
+	border: 1px solid white;
+	border-radius: 50%;
+	position: absolute;
+}*/
+
+.bgSlides{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+/*	display: none;*/
+	background-size: cover;
+	z-index: 0;
+	/*cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;*/	
+}
+
+
+
+/*BACKBIN*/
+#backbin{
+	position: relative;
+	width: 130px;
+	height: 80px;
+	top: 15px;
+	left: 15px;
+	z-index: 1;
+cursor: url('../contents/32px-03.svg'), auto;
+/*	background-color: red;*/
+}
+
+#backbin img{
+	width: 100%;
+}
+
+.topLButton{
+	position: absolute;
+	width: 65px;
+	height: 80px;
+}
+
+#tl-left{
+	top:0;
+/*	background-color: gold;*/
+}
+
+#tl-right{
+	top:0;
+	left: 65px;
+/*	background-color: brown;*/
+}
+
+
+
+/*LOCATION*/
+#location{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 15px;
+	bottom: 5px;
+	z-index: 1;
+/*	background-color: pink;*/
+}
+
+#location img{
+	width: 100%;
+}
+
+
+/*QUESTION*/
+#question{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	right: 0;
+	top:15px;
+	z-index: 1;
+/*	background-color: pink;*/
+}
+
+#question img{
+	width: 100%;
+}
+
+/*COMPASS*/
+#compass{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	right: 0;
+	bottom:140px;
+	z-index: 1;
+/*	background-color: pink;*/
+}
+
+#compass img{
+	width: 100%;
+}
+
+/*ZOOM*/
+#zoom{
+	position: absolute;
+	width: 80px;
+	height: 130px;
+	right: 0;
+	bottom: 5px;
+	z-index: 1;
+/*	background-color: pink;*/
+}
+
+#zoom img{
+	width: 100%;
+}
+
+.btmRButton{
+	position: absolute;
+/*	display: block;*/
+	width: 80px;
+	height: 65px;
+}
+
+#br-top{
+	top:0;
+/*	background-color: blue;*/
+}
+
+#br-bottom{
+	top:65px;
+/*	background-color: green;*/
+}
