@@ -60,16 +60,16 @@ if(ourHours === 20){
 }
 
 //scene 8: STILL 5:00 till 
-if(ourHours === 20){
+if(ourHours === 5){
 	globalCurrentScene = 7;
 	globalCurrentAction = 0;
 }
 
 
 
-
 //TIMING OF PAIRED SCENES
 var timing = [
+	//scene 1: Morning 6:30 till 8:00
 	[8000, 7000, 5000, 40000, 50000, 10000,
 		600000, 50000, 5000, 180000, 1851000, 50000,
 		10000, 13000, 4000, 10000,
@@ -78,20 +78,27 @@ var timing = [
 		5000, 180000, 900000, 30000,
 		120000, 300000, 300000, 5000, 20000,
 		1140000, 5000, 230000, 300000, 5000],
+	//scene 2: RUSH HOUR 8:00 till 10:00
 	[1320000, 1320000, 1320000, 1320000, 1320000],
+	//scene 3: STILL 11:30 till 14:00
 	[3600000, 9000, 23000, 3780000, 28000],
+	//scene 4: RUSH HOUR 15:00 till 18:00
 	[60000, 7140000, 1140000, 60000],
-	//>
-	[1000, 2000, 2500, 1000, 1000,
-		1000, 1000, 1000, 1000, 1000, 1000,
-		1000, 1000, 1000, 1000, 1000,
-		1000, 1000, 1000, 1000, 1000, 1000, 1000,
-		1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000],
-	[10500, 2500, 1000, 1000, 1000, 1000, 1000]
+	//scene 5: ACTIVE 18:00 till 19:00
+	[10000, 5000, 5000, 20000, 5000,
+		10000, 17000, 10000, 30000, 3000, 10000],
+	//scene 6: ACTION 19:00 till 20:00
+	[1800000, 5000, 10000, 10000, 5000, 540000, 30000,
+		 10000, 5000, 10000, 5000, 10000, 30000, 5000, 5000],
+	//scene 7: AFTER ACTION 21:00 till 24:00
+	[10500, 2500, 5000],
+	//scene 8: STILL 5:00 till 
+	[9000, 20000]
 ];
 
 //SUBTITLE TEXTS
 var scenes = [
+	//scene 1: Morning 6:30 till 8:00
 	["alarm buzzing", "alarm buzzing continues", "gasps", "panting", "bed creaks", "door closes",
 		"faucet running", "toilet flushes", "glassware tinkling", "faucet stops running", "water splattering", "door opens", 
 		"footsteps", "faucet running", "faucet stops running", "electric stove beeps",
@@ -101,17 +108,24 @@ var scenes = [
 		"slurps loudly", "indistinct chatter over TV", "slips coffee", "remote clicks", "thud",
 		"floor creaks", "keys rattling", "zip fastening", "shoes thud", "doors slams"
 	],
+	//scene 2: RUSH HOUR 8:00 till 10:00
 	["horn honks in distance", "truck reversing in distance", "ties screech", "dog barking in distance", "siren wails in distance"],
+	//scene 3: STILL 11:30 till 14:00
 	["inaudible", "telephone ringing", "telephone continues ringing", "telephone ringing stops", "indistinct chatter"],
+	//scene 4: RUSH HOUR 15:00 till 18:00
 	["tires squealing", "indistinct shouting in distance", "horn beeps", "indistinct coversations"],
-//>
+	//scene 5: ACTIVE 18:00 till 19:00
 	["footsteps in distance", "key in lock", "doors open", "shoes thud", "keys rattling",
-		"switch ticks", "door closes", "bag rustles", "laptop chimes", "music playing", "typing",
-		"door buzz rings", "inaudible", "knock on door", "lock clicks", "door squeaks open",
-		"objects clanging", "music stops abruptly", "glasses shattering", "breathing heavily", "floor creaking", "breahe shakily", "device dialing",
-		"footsteps approaching quickens", "door opens loudly", "painting", "gun cocks", "muffled cries", "chuckles", "gunshots", "thud",
+		"switch ticks", "door closes", "bag rustles", "laptop chimes", "music playing", "typing"],
+	//scene 6: ACTION 19:00 till 20:00
+	["door buzz rings", "inaudible", "knock on door", "lock clicks", "door squeaks open",
+		"objects clanging", "music stops abruptly", "glasses shattering", "breathing heavily",  "device dialing", "floor creaking", "breahe shakily",
+		"footsteps approaching quickens", "door bangs loudly", "painting", "gun cocks", "muffled cries", "chuckles", "gunshots", "thud",
 	],
-	["siren wails in distance", "screaming", "people shouting", "silence", "silence continues", "birds chirping", "birds chirping continues"]
+	//scene 7: AFTER ACTION 21:00 till 24:00
+	["siren wails in distance", "screaming", "people shouting"],
+	//scene 8: STILL 5:00 till 
+	["birds chirping", "birds chirping continues"]
 ];
 
 

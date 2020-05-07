@@ -1,158 +1,146 @@
 html, body{
   padding:0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
 
+  cursor: crosshair;
+  font-size: 70%;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+
+  background-color: black;
+  background-image: url("https://i.imgur.com/eBmYSVz.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*.container {
+  position:absolute;
+  display: flex;
+  top: 0;
+  left:0;
   width: 100vw;
   height: 100vh;
-}
 
-#menu{
-  position: fixed;
-  background-color: transparent;
-  z-index: 100;
-  width: 100vw;
-  height:10vh;
-  font-size: 35px;
-  border-bottom: 3px solid white;
-}
-
-ul {
-  font-weight: medium;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  position: sticky;
-  top: 0;
-}
-
-li {
-  float: left;
-  color: white;
-  list-style-type:none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:active {
-  color: white;
-  text-decoration: wavy;
-}
-
-li a:hover {
-  text-decoration: underline;
-  color:  rgb(255,255,255,0.8); 
-}
-
+  background-image: url("https://cdn.glitch.com/a87cb0ea-98f8-4d89-95db-0f21e5be1453%2FFinalThree.jpg?v=1586763217474");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
 
 a {
   color: white;
-  text-decoration: wavy underline;
+  text-decoration: none;
 }
 
 a:active {
   color: white;
-  text-decoration: wavy;
+  text-decoration: underline;
 }
 
 a:hover {
+/*  text-decoration: wavy underline;*/
+  color:  rgb(255,255,255,0.8); 
+}
+
+span{
   text-decoration: underline;
-  color:  rgb(255,255,255,0.8); 
 }
 
-
-.dropbtn {
-	float: right;
-  background-color: transparent;
-  height: 10vh;
-  padding: 14px 16px;
-  font-weight: medium;
-  font-size: 35px;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  float: right;
-  text-align: right;
-  background-color: transparent;
-  display: inline-block;
-}
-
-.dropdown-content {
-  margin-right: 0;
-  display: none;
-  float: right;
-  position: absolute;
-  background-color: none;
-  text-decoration: none;
-  z-index: 1;
-  width: 15vh;
-}
-
-.dropdown-content a {
-  display: block;
-  float: right;
-  text-align: right;
-  position: relative;
-  top:65px;
-  padding-top: 0px;
-  width: 200px;
-  font-size: 34px;
-  color: white;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-.dropdown-content a:hover {
-	background-color: transparent;
-	text-decoration: underline;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  text-decoration: none;
-}
-
-.dropdown:hover .dropbtn {
-	background-color: transparent;
-  text-decoration: none;
-  color:  rgb(255,255,255,0.8); 
-}
-
-/*.button2 {
-    display: block;
-    background-color: blue;
-    height: 100%;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-}*/
-
-
-.container { 
+#menu {
+  position:fixed;
   margin: 0;
+  top: 0;
+  left: 0;
+
+  width: 25vw;
+  height: 100vh;
+  border-right: 1.5px solid white;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.menuText {
   position: absolute;
-  height: 100%;
-  width:100%;
-  padding-top: 20px;
-  align-items: left;
-  display: flex;
+  top: 1.5vh;
+  left: 1.5vw;
+
+  font-size: 3rem;
+  color: white;
+  z-index: 100;
+}
+
+#content {
+  position: absolute;
+  top:0;
+  left: 25vw;
+
+  width: 75vw;
+  height: 100vh;
+  font-size: 2.2rem;
+  background-color: transparent;
+}
+
+h1{
+  font-size: 2.5rem;
+  letter-spacing: 0.01rem;
+}
+
+.line{
+  position: absolute;
+
+  width: 75vw;
+  height: 10px;
+
+  background-color: red;
+  margin-bottom: 80vh;
+}
+
+.bodytext{
+  position: relative;
+  left: 5vw;
+  width: 70%;
+  height: 78%;
+  color: white;
+}
+
+img{
+  width: 80%;
+  height: auto;
+}
+
+
+a img { 
+  display: none; 
+}
+
+a:hover img { 
+  width: 40%;
+  display: block; 
+}
+
+
+.child {
+    visibility: hidden;
+}
+
+.parent:hover .child {
+    visibility: visible;
+}
+
+
+div{
+  margin-bottom: 20vh;
 }
 
 .btn {
   margin: 0;
   position: absolute;
   display: inline-block;
-  cursor: pointer;
+  cursor: ne-resize;
   border: 1px solid white;
 
   color: white;
@@ -162,16 +150,13 @@ a:hover {
 
   max-width: 160px; 
   width: 100%; 
-  
-  &:hover { text-decoration: none; }
 }
 
-/*/////////////////////////////
-//button-5 
-///////////////////////////*/
 .btn-5 {
   position: absolute;
   padding: 10px;
+  margin-top: 3vh;
+
   border: 0 solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
@@ -179,6 +164,8 @@ a:hover {
   outline-offset: 0px;
   text-shadow: none;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+  font-size: 1.5rem;
 } 
 
 .btn-5:hover {
@@ -189,258 +176,3 @@ a:hover {
   text-shadow: 1px 1px 2px #427388; 
 }
 
-.box{
-  margin: 0;
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  width: auto;
-  height: 100vh;
-}
-
-#box-1{
-  background-color: transparent;
-  width: 30vw;
-}
-
-#box-2{
-  background-color: transparent;
-  width:50vw;
-  height: 100vh;
-}
-
-#box-3{
-  background-color: transparent;
-  width: 20vw;
-}
-
-span{
-  margin-top:10vh;
-  display: block;
-  color: white;
-  position: absolute;
-  background-color: transparent;
-  font-size: 1.9vw;
-}
-
-h1{
-  font-size: 2vw;
-  color: white;
-  padding-bottom: 10px;
-  border-bottom: 1px solid white;
-}
-
-
-@media screen and (max-width: 1080px) {
-  #menu{
-  position: fixed;
-  background-color: transparent;
-  border-bottom: 3px solid white;
-  z-index: 100;
-  min-width: 560px;
-  height:65px;
-  font-size: 33px;
-  }
-
-  .dropbtn {
-  position: relative;
-  margin-right: 0;
-  float: right;
-  background-color: transparent;
-  height:65px;
-  font-size: 33px;
-  }
-
-  .dropdown-content {
-  width: 12vh;
-  }
-
-  .dropdown-content a {
-  width: 120px;
-  font-size: 30px;
-  padding: 5px;
-  background-color: transparent;
-  }
-
-  .btn {
-  font-size:17px;
-  }
-
-  #box-1{
-  background-color: transparent;
-  width: 20vw;
-  }
-
-  #box-2{
-  background-color: transparent;
-  width:60vw;
-  height: 100vh;
-  }
-
-  #box-3{
-  width: 0vw;
-  }
-
-  span{
-  margin-top:10vh;
-  display: block;
-  color: white;
-  position: absolute;
-  background-color: transparent;
-  font-size: 25px;
-  }
-
-  h1{
-  font-size: 26px;
-  color: white;
-  padding-bottom: 10px;
-  border-bottom: 1px solid white;
-  }
-
-
-}
-
-
-@media (max-width: 660px) {
-  
-  #menu{
-  position: fixed;
-  background-color: transparent;
-  border-bottom: 3px solid white;
-  z-index: 100;
-  min-width: 560px;
-  height:65px;
-  font-size: 30px;
-  }
-
-  .dropbtn {
-  position: relative;
-  margin-right: 0;
-  float: right;
-  background-color: transparent;
-  height:65px;
-/*    padding: 16px;*/
-  /*padding: 14px 16px;*/
-  font-size: 30px;
-  }
-
-  .dropdown-content {
-  width: 12vh;
-  }
-
-  .dropdown-content a {
-  width: 120px;
-  font-size: 30px;
-  padding: 5px;
-  background-color: transparent;
-  }
-
-  .btn {
-  font-size:16px;
-  }
-
-  #box-1{
-  background-color: transparent;
-  width: 3vw;
-  }
-
-  #box-2{
-  background-color: transparent;
-  width:70vw;
-  height: 100vh;
-  }
-
-  #box-3{
-  width: 0vw;
-  }
-
-  span{
-  margin-top:10vh;
-  display: block;
-  color: white;
-  position: absolute;
-  background-color: transparent;
-  font-size: 22px;
-  }
-
-  h1{
-  font-size: 25px;
-  color: white;
-  padding-bottom: 10px;
-  border-bottom: 1px solid white;
-  }
-
-
-}
-
-
-@media (max-width: 560px) {
-
-  #menu{
-  position: fixed;
-  background-color: transparent;
-  border-bottom: 2.5px solid white
-  z-index: 100;
-  min-width: 560px;
-  height:65px;
-  font-size: 28px;
-  }
-
-  .dropbtn {
-  position: relative;
-  margin-right: 90px;
-  float: right;
-  background-color: transparent;
-  height:65px;
-/*    padding: 16px;*/
-  /*padding: 14px 16px;*/
-  font-size: 28px;
-  }
-
-  .dropdown-content {
-  width: 12vh;
-  }
-
-  .dropdown-content a {
-  width: 120px;
-  font-size: 28px;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
-  }
-
-  .btn {
-  font-size:12px;
-  }
-
-
-  #box-1{
-  background-color: transparent;
-  width: 3vw;
-  }
-
-  #box-2{
-  background-color: transparent;
-  width:94vw;
-  height: 100vh;
-  }
-
-  #box-3{
-  width: 0vw;
-  }
-
-  span{
-  margin-top:10vh;
-  display: block;
-  color: white;
-  position: absolute;
-  background-color: transparent;
-  font-size: 22px;
-  }
-
-  h1{
-  font-size: 25px;
-  color: white;
-  padding-bottom: 10px;
-  border-bottom: 1px solid white;
-  }
-}
