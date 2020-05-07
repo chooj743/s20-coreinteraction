@@ -42,7 +42,7 @@ a:active {
 }
 
 a:hover {
-/*  text-decoration: wavy underline;*/
+  text-decoration: wavy underline;
   color:  rgb(255,255,255,0.8); 
 }
 
